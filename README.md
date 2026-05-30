@@ -6,6 +6,8 @@ It is built for people who want their AI-assisted work to have memory, boundarie
 
 ![Jarvis system map](docs/assets/jarvis-system-map.svg)
 
+Languages: [English](README.md) | [简体中文](READMEs/README.zh-CN.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Quick Start](https://img.shields.io/badge/Quick%20Start-install-blue.svg)](#quick-start)
 [![Codex Ready](https://img.shields.io/badge/Codex-ready-111827.svg)](#using-with-codex)

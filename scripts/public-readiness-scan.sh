@@ -15,6 +15,7 @@ PATTERN="(AKIA[0-9A-Z]{16}|${openai_key_marker}|s[k]-[A-Za-z0-9_-]{10,}|g[h]p_[A
 SCAN_PATHS=(
   "$ROOT/AGENTS.md"
   "$ROOT/README.md"
+  "$ROOT/READMEs"
   "$ROOT/00_Home"
   "$ROOT/30_Ideas"
   "$ROOT/90_System"
