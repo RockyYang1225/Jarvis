@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Capability Finder"
+  short_description: "先查个人日报，再找插件/skill/agent"
+  default_prompt: "Use $github-capability-finder to find a plugin, skill, agent, MCP server, or workflow tool for my task."

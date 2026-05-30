@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project README Builder"
+  short_description: "生成项目级 README、多语言说明和配图"
+  default_prompt: "Use $project-readme-builder to create or improve the global README for this project, including setup instructions, links, multilingual support, and visual assets."

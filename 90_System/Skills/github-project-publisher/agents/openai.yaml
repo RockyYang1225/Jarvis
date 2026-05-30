@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Project Publisher"
+  short_description: "安全创建仓库、推送、发 Release 和 Pages"
+  default_prompt: "Use $github-project-publisher to prepare this project for GitHub publication, check safety risks, create or connect the repo, push code, and publish a release or Pages site if requested."

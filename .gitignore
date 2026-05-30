@@ -1,0 +1,79 @@
+# OS and editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local environment and runtime output
+.env
+.env.*
+*.log
+*.tmp
+tmp/
+temp/
+cache/
+exports/
+dist/
+build/
+.obsidian/
+
+# Keep project indexes, ignore real project cards by default.
+/10_Workspace/Active Projects/*
+!/10_Workspace/Active Projects/Active Projects.md
+!/10_Workspace/Active Projects/.gitkeep
+/10_Workspace/Archived Projects/*
+!/10_Workspace/Archived Projects/Archived Projects.md
+!/10_Workspace/Archived Projects/.gitkeep
+/10_Workspace/Incubating Projects/*
+!/10_Workspace/Incubating Projects/Incubating Projects.md
+!/10_Workspace/Incubating Projects/.gitkeep
+/10_Workspace/Paused Projects/*
+!/10_Workspace/Paused Projects/Paused Projects.md
+!/10_Workspace/Paused Projects/.gitkeep
+
+# Career content is local by default; keep only section indexes.
+/20_Career/Interviews/*
+!/20_Career/Interviews/Interviews.md
+!/20_Career/Interviews/.gitkeep
+/20_Career/Job Market/*
+!/20_Career/Job Market/Job Market.md
+!/20_Career/Job Market/.gitkeep
+/20_Career/Portfolio/*
+!/20_Career/Portfolio/Portfolio.md
+!/20_Career/Portfolio/.gitkeep
+/20_Career/Resume/*
+!/20_Career/Resume/Resume.md
+!/20_Career/Resume/.gitkeep
+/20_Career/Stories/*
+!/20_Career/Stories/Stories.md
+!/20_Career/Stories/.gitkeep
+
+# Reviews are local by default; keep only section indexes.
+/50_Reviews/Daily/*
+!/50_Reviews/Daily/Daily.md
+!/50_Reviews/Daily/.gitkeep
+/50_Reviews/Weekly/*
+!/50_Reviews/Weekly/Weekly.md
+!/50_Reviews/Weekly/.gitkeep
+/50_Reviews/Monthly/*
+!/50_Reviews/Monthly/Monthly.md
+!/50_Reviews/Monthly/.gitkeep
+/50_Reviews/Project Retros/*
+!/50_Reviews/Project Retros/Project Retros.md
+!/50_Reviews/Project Retros/.gitkeep
+/50_Reviews/Interview Retros/*
+!/50_Reviews/Interview Retros/Interview Retros.md
+!/50_Reviews/Interview Retros/.gitkeep
+
+# Private knowledge notes are local unless explicitly promoted to reusable system knowledge.
+/40_Knowledge/Notes/*
+!/40_Knowledge/Notes/Notes.md
+!/40_Knowledge/Notes/.gitkeep
+/40_Knowledge/Sources/*
+!/40_Knowledge/Sources/Sources.md
+!/40_Knowledge/Sources/.gitkeep
+
+# Preserve standard empty directories.
+!.gitkeep
