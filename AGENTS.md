@@ -67,7 +67,8 @@ When entering a project repo:
 
 - Jarvis stores the system of record for thinking, indexing, workflows, and reusable knowledge.
 - `~/Workspace` stores real project source code.
-- Repo-owned custom skills live under `90_System/Skills`; discovery paths under `~/.agents/skills` should be symlinks when needed.
+- Jarvis-level reusable skills live under `90_System/Skills`; discovery paths under `~/.agents/skills` should be symlinks when needed.
+- Project-specific skills live inside their own project repositories, not under Jarvis.
 - Do not move project repos into Jarvis.
 - Do not silently archive, delete, rename, or rewrite long-term Jarvis files.
 - Do not send emails automatically unless an explicit email automation has been connected and the user confirms.

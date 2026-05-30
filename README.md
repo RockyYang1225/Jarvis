@@ -45,9 +45,9 @@ The top-level `AGENTS.md` tells Codex where to look first, when to enter a real 
 
 `90_System/` contains reusable workflows, agent registries, prompts, templates, rules, and tools so the system can evolve without scattering instructions across random notes.
 
-### Repo-Owned Skills
+### Jarvis-Level Skills
 
-Custom skills live under `90_System/Skills/` and can be linked into `~/.agents/skills` by the installer.
+Reusable, cross-project skills live under `90_System/Skills/` and can be linked into `~/.agents/skills` by the installer. Project-specific skills should live inside their own project repositories.
 
 ### Privacy By Default
 
@@ -68,7 +68,7 @@ cd Jarvis
 ./scripts/install.sh
 ```
 
-The installer is idempotent. It creates standard directories, preserves local files, adds `.gitkeep` placeholders, and links repo-owned skills into `~/.agents/skills`.
+The installer is idempotent. It creates standard directories, preserves local files, adds `.gitkeep` placeholders, and links Jarvis-level reusable skills into `~/.agents/skills`.
 
 ### 3. Verify
 
@@ -134,12 +134,18 @@ The `.gitignore` is intentionally conservative. If a private section needs a pub
 
 ## Skills, Workflows, And Agents
 
-### Add A Skill
+### Add A Jarvis-Level Skill
 
-Put repo-owned skills under:
+Put reusable, cross-project skills under:
 
 ```text
 90_System/Skills/<skill-name>/SKILL.md
+```
+
+Keep project-specific skills in their own project repos, for example:
+
+```text
+~/Workspace/<repo>/skills/<skill-name>/SKILL.md
 ```
 
 Run:

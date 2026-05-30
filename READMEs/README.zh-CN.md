@@ -45,9 +45,9 @@ Jarvis 内置 Home、Workspace、Ideas、Knowledge、Reviews、Career、System �
 
 `90_System/` 存放可复用 workflow、agent registry、prompt、template、rule 和 tool，让系统能力可以持续演化，而不是散落在随机笔记里。
 
-### 跟随 repo 的 Skills
+### Jarvis 上层通用 Skills
 
-自定义 skill 放在 `90_System/Skills/` 下，安装脚本会把它们链接到 `~/.agents/skills`。
+跨项目复用的上层通用 skill 放在 `90_System/Skills/` 下，安装脚本会把它们链接到 `~/.agents/skills`。项目级 skill 应该放在各自的项目 repo 里。
 
 ### 默认保护隐私
 
@@ -68,7 +68,7 @@ cd Jarvis
 ./scripts/install.sh
 ```
 
-安装脚本可以重复运行。它会创建标准目录、保留已有本地文件、补 `.gitkeep` 占位文件，并把 repo 内置 skill 链接到 `~/.agents/skills`。
+安装脚本可以重复运行。它会创建标准目录、保留已有本地文件、补 `.gitkeep` 占位文件，并把 Jarvis 上层通用 skill 链接到 `~/.agents/skills`。
 
 ### 3. 验证
 
@@ -134,12 +134,18 @@ scripts/        安装器、检查脚本、维护工具
 
 ## Skills、Workflows 和 Agents
 
-### 添加 Skill
+### 添加 Jarvis 上层通用 Skill
 
-把 repo 自带 skill 放在：
+把跨项目复用的上层通用 skill 放在：
 
 ```text
 90_System/Skills/<skill-name>/SKILL.md
+```
+
+项目级 skill 放在各自项目 repo 里，例如：
+
+```text
+~/Workspace/<repo>/skills/<skill-name>/SKILL.md
 ```
 
 然后运行：
