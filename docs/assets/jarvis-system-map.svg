@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1200 520">
+  <title id="title">Jarvis system map</title>
+  <desc id="desc">A diagram showing Jarvis routing Codex sessions into home, workspace, ideas, knowledge, reviews, and system layers while keeping project source code outside the Jarvis repository.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="#0f172a"/>
+  <rect x="36" y="36" width="1128" height="448" rx="24" fill="url(#panel)" filter="url(#shadow)"/>
+
+  <text x="86" y="96" fill="#0f172a" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="38" font-weight="760">Jarvis</text>
+  <text x="86" y="130" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="18">A Markdown operating system for Codex-assisted personal work</text>
+
+  <rect x="82" y="184" width="220" height="88" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="110" y="218" fill="#0f172a" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="700">Codex Session</text>
+  <text x="110" y="248" fill="#64748b" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">starts at AGENTS.md</text>
+
+  <path d="M302 228 L388 228" stroke="#64748b" stroke-width="3" fill="none"/>
+  <path d="M388 228 l-12 -8 v16 z" fill="#64748b"/>
+
+  <rect x="396" y="154" width="340" height="168" rx="20" fill="#111827"/>
+  <text x="428" y="196" fill="#ffffff" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="24" font-weight="740">Jarvis Repo</text>
+  <text x="428" y="228" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">indexes, workflows, prompts, templates</text>
+  <text x="428" y="258" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">knowledge capture and review loops</text>
+  <text x="428" y="288" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">repo-owned skills under 90_System</text>
+
+  <path d="M736 228 L826 228" stroke="#64748b" stroke-width="3" fill="none"/>
+  <path d="M826 228 l-12 -8 v16 z" fill="#64748b"/>
+
+  <rect x="836" y="184" width="260" height="88" rx="16" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="864" y="218" fill="#0f172a" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="20" font-weight="700">Project Repos</text>
+  <text x="864" y="248" fill="#64748b" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="15">source code lives in ~/Workspace</text>
+
+  <g font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="14" font-weight="700">
+    <rect x="96" y="350" width="122" height="42" rx="12" fill="#dbeafe"/>
+    <text x="128" y="376" fill="#1e3a8a">Home</text>
+    <rect x="238" y="350" width="122" height="42" rx="12" fill="#dcfce7"/>
+    <text x="267" y="376" fill="#166534">Ideas</text>
+    <rect x="380" y="350" width="122" height="42" rx="12" fill="#fef3c7"/>
+    <text x="408" y="376" fill="#92400e">Review</text>
+    <rect x="522" y="350" width="122" height="42" rx="12" fill="#fce7f3"/>
+    <text x="544" y="376" fill="#9d174d">Knowledge</text>
+    <rect x="664" y="350" width="122" height="42" rx="12" fill="#ede9fe"/>
+    <text x="693" y="376" fill="#5b21b6">System</text>
+    <rect x="806" y="350" width="122" height="42" rx="12" fill="#ccfbf1"/>
+    <text x="840" y="376" fill="#115e59">Skills</text>
+    <rect x="948" y="350" width="122" height="42" rx="12" fill="#e2e8f0"/>
+    <text x="979" y="376" fill="#334155">Agents</text>
+  </g>
+
+  <text x="86" y="440" fill="#475569" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="16">Public repo: reusable system skeleton. Local-only by default: private project cards, personal retros, resumes, secrets, and runtime files.</text>
+</svg>
