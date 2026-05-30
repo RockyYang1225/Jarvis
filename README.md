@@ -134,3 +134,7 @@ git status --short
 ```
 
 Review the changed and tracked file list. Do not publish private project cards, resumes, interview notes, secrets, or personal retros unless they have been intentionally sanitized.
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
