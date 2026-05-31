@@ -38,6 +38,19 @@ README.ja.md
 README.ko.md
 ```
 
+For projects with multiple localized READMEs or long showcase docs, use a dedicated README directory:
+
+```text
+README.md
+READMEs/README.zh-CN.md
+READMEs/README.zh-TW.md
+READMEs/README.ja.md
+READMEs/README.ko.md
+READMEs/README.es.md
+```
+
+Keep the root `README.md` as the GitHub landing page and link to the localized files. Do not scatter localized README files in the repo root.
+
 In every file, add language switch links:
 
 ```markdown
@@ -51,6 +64,18 @@ For public projects with many translations, keep the language rail compact and n
 ```
 
 If localized READMEs live in a `READMEs/` folder, verify paths from the primary README and from each localized file.
+
+Example from root `README.md`:
+
+```markdown
+Languages: [English](README.md) | [简体中文](READMEs/README.zh-CN.md) | [日本語](READMEs/README.ja.md) | [한국어](READMEs/README.ko.md)
+```
+
+Example from `READMEs/README.zh-CN.md`:
+
+```markdown
+Languages: [English](../README.md) | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+```
 
 ## Translation Quality
 

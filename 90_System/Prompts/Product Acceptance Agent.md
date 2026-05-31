@@ -33,6 +33,11 @@ Evaluate:
 - Test evidence
 - Documentation consistency
 - Release readiness, if this is a major version
+- Whether Development Agent completed appropriate self-test before handoff.
+
+If the handoff lacks required development self-test evidence for the project type, the conclusion must be `阻塞` unless the handoff documents a concrete external blocker and adequate alternative evidence.
+
+For Xcode / iOS changes, require Xcode build/test evidence and, when UI or user flows changed, simulator/manual UI evidence or a documented reason it cannot be captured.
 
 ## Output Format
 

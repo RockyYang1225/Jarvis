@@ -19,6 +19,10 @@ dist/
 build/
 .obsidian/
 
+# External tool source snapshots are local reference material, not Jarvis source.
+/90_System/Tools/External Tools/**/repo/
+/90_System/Tools/External Tools/plugins/root/
+
 # Keep project indexes, ignore real project cards by default.
 /10_Workspace/Active Projects/*
 !/10_Workspace/Active Projects/Active Projects.md

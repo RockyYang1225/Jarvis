@@ -62,6 +62,7 @@ Do not force every section. The goal is a repo homepage with momentum, not a blo
 - Prefer tables for command lists, environment variables, and tech stack summaries.
 - Use compatibility matrices for multi-platform tools.
 - Keep implementation details in linked docs when they already exist.
+- If the README set has multiple languages or variants, keep root `README.md` as the landing page and store companion files under `READMEs/`. Do not place localized README files directly in the repo root.
 - For demo projects, label status honestly and explain what is production-ready versus experimental.
 - For private projects, do not add public contribution instructions unless requested.
 - For public projects, include installation, usage, license, and support/contact expectations when known.

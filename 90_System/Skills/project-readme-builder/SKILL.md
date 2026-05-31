@@ -22,6 +22,7 @@ Use this skill to create a repository's global `README.md` as a clear project ho
    - Single language: `README.md`
    - Single file with language anchors: one `README.md`
    - Multi-file localized docs: `README.md`, `README.zh-CN.md`, `README.ja.md`, `README.ko.md`, etc.
+   - Dedicated README directory: root `README.md` as the main entry plus localized/extended files under `READMEs/`.
 4. Choose presentation mode:
    - Practical/internal README for private or early projects.
    - Showcase README for public repos, plugins, apps, and portfolio projects.
@@ -82,6 +83,7 @@ Load only what you need:
 - Use verified absolute URLs for external links.
 - Add a table of contents for long README files.
 - Add language switch links for multilingual READMEs.
+- For multilingual or long-form README sets, use a dedicated `READMEs/` directory while keeping root `README.md` as the GitHub entry.
 - Before finishing, run the link checker or manually verify every local link if the script cannot run.
 
 ## Output

@@ -35,7 +35,31 @@ if [[ ${#existing_paths[@]} -eq 0 ]]; then
   exit 2
 fi
 
-if grep -REIn --exclude-dir='.git' --exclude='*.png' --exclude='*.jpg' --exclude='*.jpeg' --exclude='*.webp' --exclude='*.pdf' "$PATTERN" "${existing_paths[@]}"; then
+file_list="$(mktemp)"
+trap 'rm -f "$file_list"' EXIT
+
+if git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  git -C "$ROOT" ls-files --cached --others --exclude-standard -z -- \
+    AGENTS.md README.md READMEs 00_Home 30_Ideas 90_System docs scripts \
+    > "$file_list"
+else
+  find "${existing_paths[@]}" \
+    -path '*/.git/*' -prune -o \
+    -type f -print0 > "$file_list"
+fi
+
+if [[ ! -s "$file_list" ]]; then
+  echo "No public files found to scan under $ROOT" >&2
+  exit 2
+fi
+
+if xargs -0 grep -EIn \
+  --exclude='*.png' \
+  --exclude='*.jpg' \
+  --exclude='*.jpeg' \
+  --exclude='*.webp' \
+  --exclude='*.pdf' \
+  "$PATTERN" < "$file_list"; then
   echo "Public-readiness scan found secret-like content. Review the matches above." >&2
   exit 1
 fi

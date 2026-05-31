@@ -1,0 +1,4 @@
+interface:
+  display_name: "Email Draft Sender"
+  short_description: "写邮件、生成草稿，并在确认后安全发送"
+  default_prompt: "Use $email-draft-sender to draft, review, validate, and if explicitly confirmed with a configured provider, send this email safely."

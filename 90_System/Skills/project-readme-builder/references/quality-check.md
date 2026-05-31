@@ -12,6 +12,7 @@ Before finishing, verify the README as an artifact.
 - Visual assets are stored in the repo and referenced with relative paths.
 - Badge/action links point to real anchors, files, or URLs.
 - Language switch links work.
+- If using `READMEs/`, links work from both root `README.md` and files inside `READMEs/`.
 - Public README top section has clear positioning, proof/visuals, and a runnable path.
 - The README does not claim unsupported features, deployments, screenshots, licenses, or production readiness.
 - Long READMEs include a table of contents.

@@ -15,19 +15,19 @@
 主项目：
 
 ```text
-~/Workspace/production-readiness
+<jarvis-root>/90_System/Tools/External Tools/plugins/production-readiness/repo
 ```
 
 主 skill：
 
 ```text
-~/Workspace/production-readiness/skills/production-readiness/SKILL.md
+<jarvis-root>/90_System/Tools/External Tools/plugins/production-readiness/repo/skills/production-readiness/SKILL.md
 ```
 
 本地检查脚本：
 
 ```text
-~/Workspace/production-readiness/skills/production-readiness/scripts/inspect_project.py
+<jarvis-root>/90_System/Tools/External Tools/plugins/production-readiness/repo/skills/production-readiness/scripts/inspect_project.py
 ```
 
 ## 输入
@@ -48,7 +48,7 @@
 3. 如果能访问本地文件，运行：
 
 ```bash
-python3 ~/Workspace/production-readiness/skills/production-readiness/scripts/inspect_project.py /path/to/project
+python3 "<jarvis-root>/90_System/Tools/External Tools/plugins/production-readiness/repo/skills/production-readiness/scripts/inspect_project.py" /path/to/project
 ```
 
 4. 根据项目类型读取对应检查域 reference。
@@ -115,4 +115,4 @@ Release Checklist:
 
 - [[../Agents/Workflow Registry|Workflow Registry]]
 - [[Project Development Acceptance|项目开发验收]]
-- `~/Workspace/production-readiness/README.md`
+- [[../Tools/External Tools/plugins/production-readiness/production-readiness|production-readiness]]

@@ -2,7 +2,7 @@
 
 This directory is a Jarvis top-level personal work system. When a Codex session starts from the Jarvis repo root, use this file as the first routing guide.
 
-Also follow `/Users/rockyyang/.codex/RTK.md`: prefix shell commands with `rtk` unless a raw command is explicitly required through `rtk proxy`.
+Also follow `~/.codex/RTK.md` when present: prefix shell commands with `rtk` unless a raw command is explicitly required through `rtk proxy`.
 
 ## Start Here
 

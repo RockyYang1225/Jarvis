@@ -16,6 +16,7 @@
 | Templates | 常用文档模板 | [[../Templates/Templates|Templates]] |
 | Rules | Jarvis 系统规则 | [[../Rules/Rules|Rules]] |
 | Automation | 自动化配置入口 | [[../Automation/Automation|Automation]] |
+| External Tools | 外部工具托管和安装记录 | [[External Tools/External Tools|External Tools]] |
 
 ## 主要 Workflows
 
@@ -48,13 +49,14 @@
 
 ```text
 ~/.agents/skills/
-/Users/rockyyang/.codex/plugins/cache/openai-curated/superpowers/
+~/.codex/plugins/cache/openai-curated/superpowers/
 ```
 
 ## Jarvis 自定义 Skills
 
 | Skill | 用途 | 位置 |
 |---|---|---|
+| email-draft-sender | 写邮件、生成邮件草稿、校验收件人/正文/附件，并在邮件能力已配置且用户明确确认后安全发送 | `90_System/Skills/email-draft-sender` |
 | github-capability-finder | 先查本地 github-daily-report，再去 GitHub 找插件、skill、agent、MCP、CLI、workflow、开发者工具 | `90_System/Skills/github-capability-finder` |
 | github-project-publisher | 将本地项目或已有仓库安全发布到 GitHub / 远程 git 仓库，支持创建/连接 repo、push、Release、GitHub Pages 和发布前安全检查 | `90_System/Skills/github-project-publisher` |
 | project-readme-builder | 生成或刷新项目全局 README，支持多语言、内部/外部链接、使用说明、SVG 和生成图片等视觉资产 | `90_System/Skills/project-readme-builder` |
@@ -62,6 +64,7 @@
 发现入口：
 
 ```text
+~/.agents/skills/email-draft-sender -> <jarvis-root>/90_System/Skills/email-draft-sender
 ~/.agents/skills/github-capability-finder -> <jarvis-root>/90_System/Skills/github-capability-finder
 ~/.agents/skills/github-project-publisher -> <jarvis-root>/90_System/Skills/github-project-publisher
 ~/.agents/skills/project-readme-builder -> <jarvis-root>/90_System/Skills/project-readme-builder
@@ -125,6 +128,16 @@
 - Web：查最新信息
 - Image generation：生成或编辑图片
 - Automations：创建提醒或周期任务
+
+## 外部工具
+
+| 工具 | 用途 | 入口 |
+|---|---|---|
+| agency-agents | 第三方专业 agent 定义库，供 Jarvis agency skills 引用 | [[External Tools/agency-agents/agency-agents|agency-agents]] |
+| Understand-Anything | 将代码库、知识库或文档分析成可探索的知识图谱，并提供 `understand-*` skills | [[External Tools/Understand-Anything/Understand-Anything|Understand-Anything]] |
+| planning-with-files | 文件型规划工具项目；真实 repo 托管在 Jarvis External Tools | [[External Tools/planning-with-files/planning-with-files|planning-with-files]] |
+| plugins | 个人 Codex plugin 托管入口 | [[External Tools/plugins/plugins|plugins]] |
+| production-readiness | 生产上线准备度评审 plugin / skill | [[External Tools/plugins/production-readiness/production-readiness|production-readiness]] |
 
 ## 工具选择规则
 
